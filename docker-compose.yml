@@ -1,0 +1,27 @@
+version: "3.2"
+services:
+  eestado_app:
+    build:
+      context: .
+    container_name: eestado_app
+    volumes: 
+      - ./:/var/www
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default
+    environment:
+      - CI_ENV=development
+    # ports:
+    #   - 8000:80
+    network_mode: "host"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  #   depends_on:
+  #     - redis
+  # redis:
+  #   image: redislabs/rejson
+  #   container_name: eestado_redisjson
+  #   ports:
+  #     - 6379:6379
+# networks:
+#   default:
+#     external: true
+#     name: eestado_network

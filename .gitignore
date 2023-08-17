@@ -13,4 +13,4 @@ uploads/
 auditoria/
 !auditoria/.keep
 
-docker-compose.yml
+# docker-compose.yml

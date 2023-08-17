@@ -12,9 +12,11 @@ RUN apt update && apt install -y \
         libpq-dev \
         libmcrypt-dev \
         libzip-dev
-RUN docker-php-ext-install sockets pgsql gd json mbstring soap xml
-RUN pecl install zip
-RUN pecl install mcrypt
+        
+RUN docker-php-ext-install intl
+# RUN docker-php-ext-install sockets pgsql gd json mbstring soap xml
+# RUN pecl install zip
+# RUN pecl install mcrypt
 
 RUN curl -sS https://getcomposer.org/installer -o composer-setup.php && \
         HASH=`curl -sS https://composer.github.io/installer.sig` && \
@@ -27,19 +29,19 @@ RUN sudo apt-get update
 
 WORKDIR /var/www
 
-COPY ["composer.json", "composer.lock*", "./"]
+# COPY ["composer.json", "composer.lock*", "./"]
 
-RUN composer install
-
-COPY . .
 
 COPY ./docker/nginx/nginx.conf /etc/nginx/sites-enabled/default
 COPY ./docker/entrypoint.sh /app/entrypoint.sh
 COPY ./docker/php/php.ini "$PHP_INI_DIR/php.ini"
-COPY ./docker/php-fpm.d/zz-overrides.conf "/usr/local/etc/php-fpm.d/zz-overrides.conf"
+# COPY ./docker/php-fpm.d/zz-overrides.conf "/usr/local/etc/php-fpm.d/zz-overrides.conf"
 
-RUN chown -R www-data:www-data /var/www/uploads
-RUN chmod -R 774 /var/www/uploads
+
+COPY . .
+RUN composer install
+# RUN chown -R www-data:www-data /var/www/uploads
+# RUN chmod -R 774 /var/www/uploads
 
 EXPOSE 80
 

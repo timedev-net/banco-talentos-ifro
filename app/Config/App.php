@@ -17,7 +17,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = isset($_ENV['BASE_URL']) ? $_ENV['BASE_URL'] : 'http://localhost:8080/';
+    public string $baseURL = 'http://localhost/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

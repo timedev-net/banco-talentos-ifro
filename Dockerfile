@@ -12,9 +12,15 @@ RUN apt update && apt install -y \
         libpq-dev \
         libmcrypt-dev \
         libzip-dev
+
+
+COPY ./docker/nginx/nginx.conf /etc/nginx/sites-enabled/default
+COPY ./docker/entrypoint.sh /app/entrypoint.sh
+COPY ./docker/php/php.ini "$PHP_INI_DIR/php.ini"
+COPY ./docker/php-fpm.d/zz-overrides.conf "/usr/local/etc/php-fpm.d/zz-overrides.conf"
         
-RUN docker-php-ext-install intl
-# RUN docker-php-ext-install sockets pgsql gd json mbstring soap xml
+RUN docker-php-ext-install intl gd mbstring && docker-php-ext-enable intl gd mbstring
+# RUN docker-php-ext-install sockets pgsql  json soap xml
 # RUN pecl install zip
 # RUN pecl install mcrypt
 
@@ -31,10 +37,6 @@ WORKDIR /var/www
 
 
 
-COPY ./docker/nginx/nginx.conf /etc/nginx/sites-enabled/default
-COPY ./docker/entrypoint.sh /app/entrypoint.sh
-COPY ./docker/php/php.ini "$PHP_INI_DIR/php.ini"
-# COPY ./docker/php-fpm.d/zz-overrides.conf "/usr/local/etc/php-fpm.d/zz-overrides.conf"
 
 COPY ["composer.json", "composer.lock*", "./"]
 RUN composer install

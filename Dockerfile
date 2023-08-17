@@ -1,4 +1,4 @@
-FROM registry.okd.local/php:7.3-fpm
+FROM php:8.2.8-fpm
 
 RUN apt update && apt install -y \
         nginx \
@@ -21,25 +21,9 @@ RUN curl -sS https://getcomposer.org/installer -o composer-setup.php && \
         php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" && \
         php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
-RUN curl -fsSL https://gitlab.setic.ro.gov.br/publico/ca-trust/-/raw/master/openshift_ca.crt -o /usr/local/share/ca-certificates/openshift_ca.crt
-RUN curl -fsSL https://gitlab.setic.ro.gov.br/publico/ca-trust/-/raw/master/portainer_ca.crt -o /usr/local/share/ca-certificates/portainer_ca.crt
-RUN update-ca-certificates
-
 RUN apt-get -y install sudo wget gnupg
 
-RUN echo 'deb http://apt.newrelic.com/debian/ newrelic non-free' | sudo tee /etc/apt/sources.list.d/newrelic.list
-
-RUN wget -O- https://download.newrelic.com/548C16BF.gpg | sudo apt-key add -
-
 RUN sudo apt-get update
-
-RUN sudo apt-get -y install newrelic-php5
-
-RUN sudo NR_INSTALL_SILENT=1 newrelic-install install
-
-RUN sed -i -e "s/REPLACE_WITH_REAL_KEY/94fca91fdcafed13b0918b672363029165fcNRAL/" \
-        -e "s/newrelic.appname[[:space:]]=[[:space:]].*/newrelic.appname=\"e-Estado\"/" \
-        $(php -r "echo(PHP_CONFIG_FILE_SCAN_DIR);")/newrelic.ini
 
 WORKDIR /var/www
 

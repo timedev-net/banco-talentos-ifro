@@ -20,7 +20,8 @@ COPY ./docker/entrypoint.sh /app/entrypoint.sh
 COPY ./docker/php/php.ini "$PHP_INI_DIR/php.ini"
 COPY ./docker/php-fpm.d/zz-overrides.conf "/usr/local/etc/php-fpm.d/zz-overrides.conf"
         
-RUN docker-php-ext-install intl gd json mbstring sockets pgsql soap xml && docker-php-ext-enable intl gd mbstring pgsql sockets
+RUN docker-php-ext-install gd intl mbstring sockets pgsql soap xml 
+RUN docker-php-ext-enable intl gd mbstring pgsql sockets
 
 RUN pecl install zip
 RUN pecl install mcrypt

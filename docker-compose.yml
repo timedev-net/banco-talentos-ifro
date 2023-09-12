@@ -14,8 +14,19 @@ services:
     network_mode: "host"
     extra_hosts:
       - "host.docker.internal:host-gateway"
-  #   depends_on:
-  #     - redis
+    depends_on:
+      - postgres_db
+  postgres_db:
+    image: postgres
+    volumes:
+      - ./tmp/database:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: senha
+      POSTGRES_DB: talentos
+      # USUARIO PADRÃO: postgres
+    ports:
+      - 5432:5432
   # redis:
   #   image: redislabs/rejson
   #   container_name: eestado_redisjson

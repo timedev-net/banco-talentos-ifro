@@ -362,3 +362,242 @@ in APPPATH/Modules/Home/HomeController.php on line 12.
  5 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
  6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
  7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:23:33 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(81): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Modules/Home/HomeController.php(12): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:23:46 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(81): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Modules/Home/HomeController.php(12): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:23:46 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(81): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Modules/Home/HomeController.php(12): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:24:46 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(81): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Modules/Home/HomeController.php(12): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:26:15 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(81): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Modules/Home/HomeController.php(12): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:26:15 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(81): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Modules/Home/HomeController.php(12): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:26:18 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(81): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Modules/Home/HomeController.php(12): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:43:04 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:43:06 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:44:37 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:44:38 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:44:38 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:44:39 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:44:40 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:44:40 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:44:41 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:45:24 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:45:24 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:45:25 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-17 21:49:53 --> Call to undefined method CodeIgniter\Database\Postgre\Connection::from()
+in APPPATH/Modules/Home/HomeModel.php on line 16.
+ 1 APPPATH/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:50:13 --> Call to undefined method CodeIgniter\Database\Postgre\Connection::from()
+in APPPATH/Modules/Home/HomeModel.php on line 16.
+ 1 APPPATH/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:50:21 --> Call to undefined method CodeIgniter\Database\Postgre\Connection::from()
+in APPPATH/Modules/Home/HomeModel.php on line 16.
+ 1 APPPATH/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-17 21:50:22 --> Call to undefined method CodeIgniter\Database\Postgre\Connection::from()
+in APPPATH/Modules/Home/HomeModel.php on line 16.
+ 1 APPPATH/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-17 21:52:08 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in /var/www/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:72
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/app/Modules/Home/HomeModel.php(19): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/app/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+#4 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-17 21:52:08 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Modules/Home/HomeModel.php(19): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-17 21:54:15 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in /var/www/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:72
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/app/Modules/Home/HomeModel.php(24): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/app/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+#4 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-17 21:54:15 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Modules/Home/HomeModel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-17 21:54:16 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in /var/www/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:72
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/app/Modules/Home/HomeModel.php(24): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/app/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+#4 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-17 21:54:16 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Modules/Home/HomeModel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-17 21:54:16 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in /var/www/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:72
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/app/Modules/Home/HomeModel.php(24): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/app/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+#4 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-17 21:54:16 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Modules/Home/HomeModel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-17 21:54:20 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in /var/www/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:72
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/app/Modules/Home/HomeModel.php(24): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/app/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+#4 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-17 21:54:20 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Modules/Home/HomeModel.php(24): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Modules/Home/HomeController.php(13): App\Modules\Home\HomeModel->getAll()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Modules\Home\HomeController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

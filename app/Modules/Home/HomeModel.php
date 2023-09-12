@@ -8,7 +8,7 @@ use CodeIgniter\Model;
 class HomeModel extends Model
 {
 
-    protected $table = 'cadastro_geral.sexo';
+    protected $table = 'public.migrations';
 
     public function __construct() {
         parent::__construct();
@@ -25,7 +25,7 @@ class HomeModel extends Model
         // $query = $this->db->get();
         // $query2 = $query->result();
 
-        dd($query);
+        // dd($query);
 
         return "Aqui é a model";
     }

@@ -15,3 +15,5 @@ auditoria/
 
 writable/
 # docker-compose.yml
+
+tmp/

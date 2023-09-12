@@ -1,6 +1,7 @@
 FROM php:8.2.8-fpm
 
 RUN apt update && apt install -y \
+        curl \
         nginx \
         unzip \
         libfreetype6-dev \
@@ -19,10 +20,10 @@ COPY ./docker/entrypoint.sh /app/entrypoint.sh
 COPY ./docker/php/php.ini "$PHP_INI_DIR/php.ini"
 COPY ./docker/php-fpm.d/zz-overrides.conf "/usr/local/etc/php-fpm.d/zz-overrides.conf"
         
-RUN docker-php-ext-install intl gd mbstring && docker-php-ext-enable intl gd mbstring
-# RUN docker-php-ext-install sockets pgsql  json soap xml
-# RUN pecl install zip
-# RUN pecl install mcrypt
+RUN docker-php-ext-install intl gd json mbstring sockets pgsql soap xml && docker-php-ext-enable intl gd mbstring pgsql sockets
+
+RUN pecl install zip
+RUN pecl install mcrypt
 
 RUN curl -sS https://getcomposer.org/installer -o composer-setup.php && \
         HASH=`curl -sS https://composer.github.io/installer.sig` && \

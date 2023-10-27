@@ -3,9 +3,11 @@
 namespace App\Modules\Home;
 
 // use App\Modules\BaseController;
+
+
 use CodeIgniter\Model;
 
-class HomeModel extends Model
+class HomeModel extends Model 
 {
 
     protected $table = 'public.migrations';
@@ -15,7 +17,7 @@ class HomeModel extends Model
         $this->db = db_connect();
     }
 
-    public function getAll(): string
+    public function getAll(): array
     {
         // $db = db_connect();
         
@@ -25,8 +27,8 @@ class HomeModel extends Model
         // $query = $this->db->get();
         // $query2 = $query->result();
 
-        // dd($query);
+        dd($query);
 
-        return "Aqui é a model";
+        return ["Aqui é a model"];
     }
 }

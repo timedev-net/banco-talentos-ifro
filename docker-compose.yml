@@ -18,8 +18,9 @@ services:
       - postgres_db
   postgres_db:
     image: postgres
+    container_name: postgres_db
     volumes:
-      - ./tmp/database:/var/lib/postgresql/data
+      - db-banco-talentos:/var/lib/postgresql/data
     restart: always
     environment:
       POSTGRES_PASSWORD: senha
@@ -36,3 +37,6 @@ services:
 #   default:
 #     external: true
 #     name: eestado_network
+volumes:
+  db-banco-talentos:
+    external: true

@@ -2,6 +2,8 @@
 
 ## Comandos
 
+docker volume create db-banco-talentos
+docker volume ls
 docker compose up -d
 docker exec -it banco_talentos /bin/bash
 php spark migrate

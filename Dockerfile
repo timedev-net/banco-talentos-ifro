@@ -1,30 +1,43 @@
 FROM php:8.2.8-fpm
+# FROM php:8.1-rc-fpm-bullseye
 
-RUN apt update && apt install -y \
+COPY ./docker/php-fpm.d/zz-overrides.conf "/usr/local/etc/php-fpm.d/zz-overrides.conf"
+COPY ./docker/php/php.ini "$PHP_INI_DIR/php.ini"
+COPY ./docker/nginx/nginx.conf /etc/nginx/sites-enabled/default
+COPY ./docker/entrypoint.sh /app/entrypoint.sh
+# RUN apt install -y curl
+RUN apt update && apt install -y --no-install-recommends \
         curl \
         nginx \
         unzip \
+        libicu-dev \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
         libpq-dev \
         libxml2-dev \
         libonig-dev \
-        libpq-dev \
         libmcrypt-dev \
-        libzip-dev
-
-
-COPY ./docker/nginx/nginx.conf /etc/nginx/sites-enabled/default
-COPY ./docker/entrypoint.sh /app/entrypoint.sh
-COPY ./docker/php/php.ini "$PHP_INI_DIR/php.ini"
-COPY ./docker/php-fpm.d/zz-overrides.conf "/usr/local/etc/php-fpm.d/zz-overrides.conf"
-        
-RUN docker-php-ext-install gd intl mbstring sockets pgsql soap xml 
-RUN docker-php-ext-enable intl gd mbstring pgsql sockets
+        libzip-dev \
+        zlib1g-dev
 
 RUN pecl install zip
 RUN pecl install mcrypt
+
+RUN docker-php-ext-configure gd \
+    && docker-php-ext-install gd
+RUN docker-php-ext-configure intl \
+    && docker-php-ext-install intl
+
+RUN docker-php-ext-install zip
+RUN docker-php-ext-install mbstring
+RUN docker-php-ext-install sockets 
+RUN docker-php-ext-install pgsql 
+RUN docker-php-ext-install soap 
+RUN docker-php-ext-install xml 
+RUN docker-php-ext-enable intl gd mbstring pgsql sockets
+
+
 
 RUN curl -sS https://getcomposer.org/installer -o composer-setup.php && \
         HASH=`curl -sS https://composer.github.io/installer.sig` && \
@@ -36,9 +49,6 @@ RUN apt-get -y install sudo wget gnupg
 RUN sudo apt-get update
 
 WORKDIR /var/www
-
-
-
 
 COPY ["composer.json", "composer.lock*", "./"]
 RUN composer install
